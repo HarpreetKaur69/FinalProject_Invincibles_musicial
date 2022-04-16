@@ -1,0 +1,102 @@
+*{
+    margin:0px;padding:0px; 
+}
+html,body{
+    width:100%; height: 1000px;color:white;
+}
+header{
+    width:100%; background-color:rgb(88, 17, 91); height:10%;display: flex;
+}
+.logobox{
+    width:25%;
+    height: 100%; padding-left:5%;;overflow: hidden;
+}
+.logo{
+    height:100%;
+}
+.titlebox{
+    width:65%;padding-right:5%;height: 100%;text-align: center;
+}
+.titlebox{
+    line-height: 3em;
+}
+nav{
+    width:90%; height:5%; padding:0px 5%; background-color: #2e1835;clear:both; text-align: justify;
+}
+.musicindex{
+    width:90%; height:75%;padding:0px 5%; background-image: url('../images/indexbg2.jpg');
+    background-repeat: no-repeat;
+} 
+aside{
+    width:20%;padding:5%; height:90%; 
+} 
+.sidelinks{
+    width: 100%; height:50%; list-style: none;
+} 
+.sidelinks li{
+    width:100%; margin:5px 0px; height:10%; text-align: center;background-color: rgba(70, 32, 53,0.7); 
+    border-radius: 20px;
+}
+.sidelinks li a{
+    color:white; font-size:1.3em;text-decoration: none;
+}
+footer{
+    width:90%; height:10%;padding:0px 5%; background-color: #311327;
+    text-align: center;
+    font-size:1.2em;
+}
+#nav_menu { display: block; }
+/* display the mobile menu */
+#mobile_menu { display: none; }
+#nav_menu ul{
+    display: flex;
+    list-style: none;
+}
+.fa{
+    color:white;
+}
+#nav_menu ul { width: 100%;height: 100%; }
+#nav_menu ul li { width: 20%;height: 90%;padding:1% 0px} 
+#nav_menu ul li:hover ul { width: 100%; }
+#nav_menu ul li:hover ul li:hover ul li { width: 100%; }
+#nav_menu ul li a{
+    color:white;text-decoration: none;
+}
+ /* full width of list */
+@media only screen and (max-width: 959px) {
+    .titlebox h1{
+        font-size:2em;
+    }
+    .titlebox{
+        line-height: 2em;
+    }
+    #nav_menu { display: none; }
+    #mobile_menu { display: block; }
+    .slicknav_menu ul li {
+        background-color: red;
+    }
+    #nav_menu ul li a { font-size: .875em; } 
+
+    
+    aside{
+        width:100%;height:90%; padding:5% 0px;
+    } 
+    .sidelinks{
+        width: 100%; height:50%; list-style: none;
+    } 
+    .sidelinks li{
+        width:100%; margin:5px 0px; height:10%; text-align: center;background-color: rgba(70, 32, 53,0.7); 
+        border-radius: 20px;
+    }
+    .sidelinks li a{
+        color:white; font-size:0.83em;text-decoration: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu { display: none; }
+    #mobile_menu { display: block; }
+    .slicknav_menu {
+        background-color: #2e1835 !important; 
+    }
+}   
+   

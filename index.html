@@ -5,34 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Musicial Website</title>
-    <link href="assets/css/mainwhite.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assests/css/slicknav.min.css">
+    <link href="assests/css/mainwhite.css" rel="stylesheet"/>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/mainjs.js"></script>
+    <script src="assests/js/mainjs.js"></script>
+    <script src="assests/js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+
 </head>
 <body>
     <header>
         
         <div class="logobox">
-            <img src="assets/images/musical_logo.jpg" class="logo" alt="Musicial Logo"/>
+            <img src="assests/images/musical_logo.jpg" class="logo" alt="Musicial Logo"/>
         </div>
         <div class="titlebox">
             <h1>Musicial Website</h1>
             <p>Place for Fun and Music</p>
         </div>
     </header>
-    <nav>
-        Menubar 
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register/Login</a></li>
+            <li><a href="audio.html">Audios</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
     </nav>
     <section class="musicindex">
-        <aside>
-
+        <aside class=""> 
+            <ul class="sidelinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mylib.html">My Library</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+                <li><a href="privacy.html">Provacy</a></li>
+            </ul>
         </aside>
         <main>
 
         </main>
     </section>
     <footer>
+        <br/>
         <small> The Project is created by Invincibles Team Member on Musical Website &copy; 2022</small>
+        <p>
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-youtube"></span>
+            <span class="fa fa-twitter"></span>
+        </p>
     </footer>
+    
+    <script src="https://use.fontawesome.com/4cf57b5f14.js"></script>
+
 </body>
 </html>
