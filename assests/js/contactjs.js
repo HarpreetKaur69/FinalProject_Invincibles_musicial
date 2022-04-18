@@ -15,6 +15,6 @@ $(function(){
         $("#usermsg").html("Your Request is Submitted Succesfully").addClass('usermsg');
         setTimeout(()=>{
             $("#usermsg").html("").removeClass('usermsg');
-        },1000);
+        },2500);
     })
 })
